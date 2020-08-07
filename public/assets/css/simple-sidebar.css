@@ -1,0 +1,134 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/templates/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    background-color: yellow;
+    width: 18rem;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    /* padding: 0.875rem 1.25rem; */
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    height: 8rem;
+}
+
+/* .sidebar-heading {
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    height: 8rem;
+} */
+
+.nav .nav-item span {
+    /* width: 18rem; */
+    font-size: 1.2rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+/* #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+} */
+
+.nav a:hover {
+    background-color: white;
+}
+
+span {
+    color: black;
+}
+
+#sidebar-list i {
+    color: black;
+    padding-right: 0.5rem;
+}
+
+#sidebar-list .nav-item {
+    height: 5rem;
+    padding-top: 1.5rem;
+}
+
+.nav-title {
+    font-size: 1.8rem;
+    height: 8rem;
+}
+
+hr {
+    border: 1.5px solid black;
+}
+
+/* #product-table .alert {
+    margin-bottom: 2rem;
+} */
+
+#page-content-wrapper .collapse {
+    padding-right: 2rem;
+}
+
+#page-content-wrapper .navbar {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+#page-content-wrapper li {
+    padding: 0.5rem;
+}
+
+#product-table {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+#product-table h2 {
+    margin: 0;
+}
+
+#product-table #top {
+    padding: 0;
+}
+
+#product-table .alert {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+}
+
+#product-table .alert-unsuccess .alert-success p {
+    margin-bottom: 0;
+}
+
+#product-table .alert p {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
