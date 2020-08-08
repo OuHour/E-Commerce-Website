@@ -1,7 +1,28 @@
 @extends('client.index')
+
+@section('nav')
+
+    <!-- container -->
+    <div class="container">
+        <!-- responsive-nav -->
+        <div id="responsive-nav">
+            <!-- NAV -->
+            <ul class="main-nav nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/categories/laptops">Laptops</a></li>
+                <li><a href="/categories/smartphones">Smartphones</a></li>
+                <li><a href="/categories/tablets">Tablets</a></li>
+            </ul>
+            <!-- /NAV -->
+        </div>
+        <!-- /responsive-nav -->
+    </div>
+    <!-- /container -->
+
+@endsection
+
 @section('content')
     
-
     <!-- SECTION Laptops-->
     <div class="section">
         <!-- container -->
@@ -52,7 +73,7 @@
                                         </div>
                                         <div class="product-body">
                                             <p class="product-category">{{$product->categories->name}}</p>
-                                            <h3 class="product-name"><a href="#">p{{$product->model}}</a></h3>
+                                            <h3 class="product-name" style="height: 70px"><a href="#">p{{$product->model}}</a></h3>
                                             <h4 class="product-price">${{$product->price}}</h4>
                                             <div class="product-rating">
                                                 <i class="fa fa-star"></i>
@@ -123,7 +144,7 @@
                                         </div>
                                         <div class="product-body">
                                             <p class="product-category">{{$product->categories->name}}</p>
-                                            <h3 class="product-name"><a href="#">p{{$product->model}}</a></h3>
+                                            <h3 class="product-name"><a href="#">{{$product->model}}</a></h3>
                                             <h4 class="product-price">${{$product->price}}</h4>
                                             <div class="product-rating">
                                                 <i class="fa fa-star"></i>

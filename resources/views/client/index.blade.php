@@ -45,22 +45,7 @@
 
 		<!-- NAVIGATION -->
 		<nav id="navigation">
-			<!-- container -->
-			<div class="container">
-				<!-- responsive-nav -->
-				<div id="responsive-nav">
-					<!-- NAV -->
-					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						@foreach ($categories as $id => $category)
-							<li><a href="#">{{$category}}</a></li>
-						@endforeach
-					</ul>
-					<!-- /NAV -->
-				</div>
-				<!-- /responsive-nav -->
-			</div>
-			<!-- /container -->
+			@yield('nav')
 		</nav>
 		<!-- /NAVIGATION -->
 

@@ -9,9 +9,9 @@
 			<!-- NAV -->
 			<ul class="main-nav nav navbar-nav">
 				<li><a href="/">Home</a></li>
-				<li class="active"><a href="/categories/laptops">Laptops</a></li>
+				<li><a href="/categories/laptops">Laptops</a></li>
 				<li><a href="/categories/smartphones">Smartphones</a></li>
-				<li><a href="/categories/tablets">Tablets</a></li>
+				<li class="active"><a href="/categories/tablets">Tablets</a></li>
 			</ul>
 			<!-- /NAV -->
 		</div>
@@ -241,7 +241,7 @@
 						<!-- store products -->
 						<div class="row">
 							<!-- product -->
-							@foreach($laptops as $product)
+							@foreach($tablets as $product)
 							<div class="col-md-4 col-xs-6">
 								<div class="product">
 									<div class="product-img">
@@ -249,7 +249,7 @@
 									</div>
 									<div class="product-body">
 										<p class="product-category">{{$product->categories->name}}</p>
-										<h3 class="product-name" style="height: 70px"><a href="{{url('/product', $product->id)}}">{{$product->model}}</a></h3>
+										<h3 class="product-name"><a href="{{url('/product', $product->id)}}">{{$product->model}}</a></h3>
 										<h4 class="product-price">${{$product->price}}</h4>
 										<div class="product-rating">
 											<i class="fa fa-star"></i>
@@ -278,7 +278,7 @@
 
 						<div class="row">
 							<div class="col-12 d-flex text-right" style="margin-right: 12px">
-								{{ $laptops->links() }}
+								{{ $tablets->links() }}
 							</div>
 						</div>
 

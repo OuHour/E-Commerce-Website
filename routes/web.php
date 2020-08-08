@@ -19,7 +19,10 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', 'HomeController@index')->name('home.index');
-Route::get('/laptops', 'HomeController@laptop')->name('home.laptop');
+Route::get('/categories/laptops', 'HomeController@laptop')->name('home.laptop');
+Route::get('/categories/smartphones', 'HomeController@smartphone')->name('home.smartphone');
+Route::get('/categories/tablets', 'HomeController@tablet')->name('home.tablet');
+Route::get('/product/{id}', 'HomeController@productDetail');
 
 // Route::get('/dashboard', function () {
 //     return view('admin.master_dashboard');
